@@ -2,14 +2,16 @@
 .pio/
 .vscode/
 
-# In cad/ nur den export/-Ordner versionieren
+# cad/: nur export/ versionieren
 cad/*
 !cad/export/
 !cad/export/**
 
-# Python cache
+# Anleitung: nur das PDF im Hauptordner
+docs/
+assets/
+ANLEITUNG.md
+
 __pycache__/
 *.pyc
-
-# Local SSH deploy key (never commit private keys!)
 .deploy_key*
