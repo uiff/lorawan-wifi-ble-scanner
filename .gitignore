@@ -1,0 +1,14 @@
+# PlatformIO build & cache
+.pio/
+.vscode/
+
+# FreeCAD backup files
+*.FCBak
+*.fcbak
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local SSH deploy key (never commit private keys!)
+.deploy_key*
