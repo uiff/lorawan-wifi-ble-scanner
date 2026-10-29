@@ -1,7 +1,7 @@
 # Bau- & Bedienungsanleitung: 3-in-1 LoRaWAN / WiFi / BLE Finder (Rev. 5 – 2-Farben-Edition)
 
-🌐 **Projekt, Firmware & IoT-Lösungen auf [www.iotueli.ch](https://www.iotueli.ch)**  
-📄 **Druckfertiges PDF-Handbuch (4 Seiten A4):** [`Bauanleitung_LoRaWAN_Finder.pdf`](file:///c:/Users/uiff/Documents/coding/ESP_LoraWan_Finder/Bauanleitung_LoRaWAN_Finder.pdf)
+**Projekt, Firmware & IoT-Lösungen auf [www.iotueli.ch](https://www.iotueli.ch)**  
+**Druckfertiges PDF-Handbuch (4 Seiten A4):** [`Bauanleitung_LoRaWAN_Finder.pdf`](file:///c:/Users/uiff/Documents/coding/ESP_LoraWan_Finder/Bauanleitung_LoRaWAN_Finder.pdf)
 
 ---
 
@@ -42,7 +42,7 @@
 | [`Taster_Kappe.stl`](file:///c:/Users/uiff/Documents/coding/ESP_LoraWan_Finder/cad/export/Taster_Kappe.stl) | **Farbe 2:** `3×` drucken – Unterseite 100 % flach/bündig für vollen Tastenhub |
 
 > [!TIP]
-> **Zweifarbiger Druck in Bambu Studio (AMS):** Öffne einfach [`LoraWanFinder_BambuLab_Platte.3mf`](file:///c:/Users/uiff/Documents/coding/ESP_LoraWan_Finder/cad/export/LoraWanFinder_BambuLab_Platte.3mf). Der Deckel (`Gehaeuse_Oben`) liegt mit der Sichtseite nach unten auf dem Druckbett und besteht bereits aus zwei Teilkörpern: `Deckel_Hauptkoerper` (**Filament 1**, z. B. Anthrazit/Schwarz) und `IoTUeli_Logo_und_Tasten` (**Filament 2**, z. B. Cyan/Weiß). Da das Inlay exakt `0.60 mm` hoch ist (3 Schichten à `0.20 mm`), sind nur in den ersten 3 Schichten Farbwechsel nötig – komplett ohne Stützstruktur (**Support: AUS**)!
+> **Zweifarbiger Druck in Bambu Studio (AMS):** Öffne einfach [`LoraWanFinder_BambuLab_Platte.3mf`](file:///c:/Users/uiff/Documents/coding/ESP_LoraWan_Finder/cad/export/LoraWanFinder_BambuLab_Platte.3mf). Der Deckel (`Gehaeuse_Oben`) liegt mit der Sichtseite nach unten auf dem Druckbett und besteht bereits aus zwei Teilkörpern: `Deckel_Hauptkoerper` (**Filament 1**, z. B. Anthrazit/Schwarz) und `IoTUeli_Logo_und_Tasten` (**Filament 2**, z. B. Cyan/Weiß). Da das Inlay exakt `0.60 mm` hoch ist (3 Schichten à `0.20 mm`), sind nur in den ersten 3 Schichten Farbwechsel nötig – komplett ohne Stützstruktur (**Support: AUS**).
 
 ---
 
@@ -53,29 +53,29 @@
 Ein quadratischer `6 × 6 mm` Kurzhubtaster besitzt **4 Beinchen (Pins)**, wovon pro Taster **nur 2 Pins benötigt** werden:
 
 ```
-       ✓ ANSCHLUSS: GND                            ✗ FREI LASSEN
+       ANSCHLUSS: GND                              FREI LASSEN
               │                                          │
               ▼                                          ▼
           ┌───────┐  ┌────────────────────────────┐  ┌───────┐
           │ PIN 1 ├──┤  Intern verbunden (1 ↔ 2)  ├──┤ PIN 2 │
           └───────┘  │                            │  └───────┘
                      │         ╭────────╮         │
-                     │         │ DRUCK  │         │
+                     │         │ TASTER │         │
                      │         ╰────────╯         │
           ┌───────┐  │                            │  ┌───────┐
           │ PIN 3 ├──┤  Intern verbunden (3 ↔ 4)  ├──┤ PIN 4 │
           └───────┘  └────────────────────────────┘  └───────┘
               ▲                                          ▲
               │                                          │
-       ✗ FREI LASSEN                            ✓ GPIO 12 / 13 / 32
+         FREI LASSEN                              GPIO 12 / 13 / 32
 ```
 
 * **Warum hat der Taster 4 Beinchen?** Im Inneren des Tasters sind jeweils **zwei gegenüberliegende Beinchen dauerhaft miteinander verbunden** (`Pin 1 ↔ Pin 2` oben und `Pin 3 ↔ Pin 4` unten). Erst beim Drücken des Knopfes werden die obere und untere Schiene verbunden.
-* **Welche Pins werden angeschlossen?** Du benötigst pro Taster **nur 2 Pins**! Die anderen **2 Pins (`Pin 2` und `Pin 3`) bleiben einfach frei**.
+* **Welche Pins werden angeschlossen?** Du benötigst pro Taster **nur 2 Pins**. Die anderen **2 Pins (`Pin 2` und `Pin 3`) bleiben einfach frei**.
 * **Der 100 %-sichere Diagonal-Trick:** Löte die zwei Drähte immer an **zwei diagonal gegenüberliegende Beinchen**:
-  * **Pin 1 (oben links)** ➔ **`GND`** (gemeinsame Masse für alle 3 Taster)
-  * **Pin 4 (unten rechts)** ➔ **`GPIO 12`** (Taster Links `‹`), **`GPIO 13`** (Taster Mitte `●`), **`GPIO 32`** (Taster Rechts `›`)
-  * *Vorteil:* Bei diagonalem Anschluss funktioniert der Taster garantiert immer – selbst wenn er um 90° gedreht eingesetzt wurde!
+  * **Pin 1 (oben links)** -> **`GND`** (gemeinsame Masse für alle 3 Taster)
+  * **Pin 4 (unten rechts)** -> **`GPIO 12`** (Taster Links `‹`), **`GPIO 13`** (Taster Mitte `●`), **`GPIO 32`** (Taster Rechts `›`)
+  * *Vorteil:* Bei diagonalem Anschluss funktioniert der Taster garantiert immer – selbst wenn er um 90° gedreht eingesetzt wurde.
 
 ---
 
@@ -100,16 +100,16 @@ Nach dem Einschalten zeigt das Gerät für 2.5 Sekunden das **IoTUeli.ch**-Start
 
 | Taster | Symbol am Deckel | GPIO | Funktion (auf allen 5 Seiten identisch!) |
 | :--- | :---: | :---: | :--- |
-| **Taster LINKS** | `[ ‹ ]` | `GPIO 12` | **Eine Seite zurückblättern** (`1/5` ➔ `5/5` ➔ `4/5` ➔ `3/5` ➔ `2/5` ➔ `1/5`) |
-| **Taster RECHTS** | `[ › ]` | `GPIO 32` | **Eine Seite weiterblättern** (`1/5` ➔ `2/5` ➔ `3/5` ➔ `4/5` ➔ `5/5`) |
-| **Taster MITTE** | `[ ● ]` | `GPIO 13` | **Aktion starten:** Führt immer genau den Befehl aus, der **unten in der Mitte in `[...]`** steht! |
+| **Taster LINKS** | `[ ‹ ]` | `GPIO 12` | **Eine Seite zurückblättern** (`1/5` -> `5/5` -> `4/5` -> `3/5` -> `2/5` -> `1/5`) |
+| **Taster RECHTS** | `[ › ]` | `GPIO 32` | **Eine Seite weiterblättern** (`1/5` -> `2/5` -> `3/5` -> `4/5` -> `5/5`) |
+| **Taster MITTE** | `[ ● ]` | `GPIO 13` | **Aktion starten:** Führt immer genau den Befehl aus, der **unten in der Mitte in `[...]`** steht. |
 
 ### Die 5 Bildschirm-Seiten im Überblick
 
 | Seite | Titel auf dem OLED | Was wird angezeigt? | Aktion mit Taste MITTE `[ ● ]` |
 | :---: | :--- | :--- | :--- |
-| **1/5** | `1/5 LORA-CHECK` | **868 MHz LoRa-Signalstärke in Prozent (`0–100 %`)**, Fortschrittsbalken & klares Urteil (`RUHE`, `SCHWACH`, `GUT (OK)`, `SEHR GUT!`) | `[NEU MESSEN]`: Startet eine 3-Sekunden-Intensivmessung über alle 8 LoRaWAN-Kanäle |
-| **2/5** | `2/5 LORA-NETZ` | **Erkanntes LoRaWAN-Netz** anhand der unverschlüsselten Paket-Kennung (`SWISSCOM`, `TTN / DRAG`, `DRAGINO`, `HELIUM`, `LORIOT`, `PRIVAT/DRAG`) + Empfangsurteil | `[RESET]`: Setzt den gespeicherten Netz-Namen zurück |
+| **1/5** | `1/5 LORA-CHECK` | **Letztes echtes 868 MHz LoRa-Paket in Prozent (`0–100 %`)**, **`dBm`** und Alter (`vor 2s`) inkl. Urteil (`RUHE`, `SCHWACH`, `GUT (OK)`, `SEHR GUT!`) | `[NEU MESSEN]`: Startet eine 3-Sekunden-Messung über alle Hauptkanäle |
+| **2/5** | `2/5 LORA (n)` | **Liste von bis zu 10 gefundenen LoRaWAN-Netzen & Sendern** anhand von `DevAddr` / `DevEUI` (`SWISSCOM`, `TTN/DRAG`, `DRAGINO`, `HELIUM`, `LORIOT`, `PRIVAT`) + `dBm` & `%` | `[NAECHSTES LORA]`: Blättert durch alle empfangenen LoRaWAN-Netze/Sender |
 | **3/5** | `3/5 LORA-TEST` | **Aktiver Gateway-Sende-Test** für dein eigenes Dragino- oder TTN-Gateway | `[SENDEN!]`: Sendet 3 LoRaWAN-Testpakete (Adresse `2601CAFE`) auf `868.1 / 868.3 / 868.5 MHz` und horcht auf Gateway-Antwort |
 | **4/5** | `4/5 WIFI (n)` | **2.4 GHz WLAN-Scanner:** Anzahl gefundener WLANs, WLAN-Name (SSID) & Signalbewertung in `%` | `[NAECHSTES WLAN]`: Blättert durch alle WLANs (`1:`, `2:`, `3:` …) und scannt am Ende neu |
 | **5/5** | `5/5 BLE (n)` | **Bluetooth-BLE-Scanner:** Anzahl aktiver BLE-Geräte, Gerätename bzw. MAC-Adresse & Signalbewertung | `[NAECHSTES BLE]`: Blättert durch alle BLE-Geräte und scannt am Ende neu |
@@ -118,13 +118,7 @@ Nach dem Einschalten zeigt das Gerät für 2.5 Sekunden das **IoTUeli.ch**-Start
 
 | Anzeige-Urteil | LoRa 868 MHz | WLAN / BLE | Bedeutung für den Einsatz |
 | :--- | :--- | :--- | :--- |
-| **`SEHR GUT!`** | ab `-85 dBm` (`65–100 %`) | ab `-67 dBm` | **Optimal!** Minimaler Batterieverbrauch (`SF7`), hohe Reserve. |
-| **`GUT (OK)`** | `-86 .. -104 dBm` (`20–65 %`) | `-68 .. -78 dBm` | **Ausreichend!** Zuverlässiger Normalbetrieb im Gebäude/Freien. |
-| **`SCHWACH`** | `-105 .. -112 dBm` (`5–20 %`) | `-79 .. -88 dBm` | **Knapp!** LoRa klappt nur mit `SF10–SF12`; Antenne besser positionieren. |
-| **`RUHE / 0%`** | unter `-112 dBm` (`0 %`) | – | Aktuell sendet kein Gerät (normales Grundrauschen). |
-
-> [!IMPORTANT]
-> **Warum zeigt LoRaWAN im Leerlauf `RUHE (0%)`, obwohl mein Dragino-Gateway eingeschaltet ist?**  
-> Anders als ein WLAN-Router sendet ein LoRaWAN-Gateway (Dragino, Swisscom LPN, TTN) im Ruhezustand **kein Dauersignal** aus, sondern funkt nur für den Bruchteil einer Sekunde, wenn ein Sensor Daten überträgt!
-> * **Test 1 (Empfang prüfen):** Schalte zuhause kurz einen LoRaWAN-Sensor ein ➔ auf **Seite 1/5 & 2/5** siehst du sofort den Ausschlag und das erkannte Netz (`SWISSCOM`, `TTN / DRAG`, `DRAGINO` usw.).
-> * **Test 2 (Dragino-Gateway prüfen):** Gehe auf **Seite 3/5 (`LORA-TEST`)** und drücke **Mitte `[SENDEN!]`** ➔ im Web-Interface deines Dragino-Gateways erscheint sofort das empfangene Testpaket `2601CAFE` samt RSSI/SNR!
+| **`SEHR GUT!`** | ab `-75 dBm` (`65–100 %`) | ab `-67 dBm` | **Optimal:** Minimaler Batterieverbrauch (`SF7`), hohe Reserve. |
+| **`GUT (OK)`** | `-76 .. -100 dBm` (`20–65 %`) | `-68 .. -78 dBm` | **Ausreichend:** Zuverlässiger Normalbetrieb im Gebäude/Freien. |
+| **`SCHWACH`** | `-101 .. -115 dBm` (`5–20 %`) | `-79 .. -88 dBm` | **Knapp:** LoRa klappt nur mit `SF10–SF12`; Antenne besser positionieren. |
+| **`RUHE / 0%`** | unter `-115 dBm` (`0 %`) | – | Aktuell sendet kein Gerät (normales Grundrauschen). |

@@ -1,4 +1,4 @@
-# 📡 3-in-1 LoRaWAN (868 MHz) / WiFi / Bluetooth BLE Finder
+# 3-in-1 LoRaWAN (868 MHz) / WiFi / Bluetooth BLE Finder
 
 <p align="center">
   <a href="https://www.iotueli.ch">
@@ -8,12 +8,12 @@
 
 <p align="center">
   <strong>Tragbarer 868 MHz LoRaWAN-Netzwerk-Scanner (Swisscom LPN, TTN, Dragino, Helium), 2.4 GHz WLAN-Scanner &amp; Bluetooth-BLE-Finder auf Basis des Heltec WiFi LoRa 32 V2 im maßgefertigten 2-Farben-3D-Druck-Gehäuse.</strong><br>
-  🌐 Projekt &amp; IoT-Lösungen: <a href="https://www.iotueli.ch"><strong>www.iotueli.ch</strong></a> • 📄 <a href="Bauanleitung_LoRaWAN_Finder.pdf"><strong>Komplette Bau- &amp; Bedienungsanleitung (PDF, 4 Seiten A4)</strong></a>
+  Projekt &amp; IoT-Lösungen: <a href="https://www.iotueli.ch"><strong>www.iotueli.ch</strong></a> • <a href="Bauanleitung_LoRaWAN_Finder.pdf"><strong>Komplette Bau- &amp; Bedienungsanleitung (PDF, 4 Seiten A4)</strong></a>
 </p>
 
 ---
 
-## 🖼️ Gehäuse-Übersicht (Rev. 5 – 2-Farben-Edition für Bambu Lab)
+## Gehäuse-Übersicht (Rev. 5 – 2-Farben-Edition für Bambu Lab)
 
 | 2-Farben-Deckel (`IoTUeli`-Logo & Symbole) | Fertig montiertes Gerät | Explosionsansicht |
 | :---: | :---: | :---: |
@@ -22,25 +22,25 @@
 
 ---
 
-## 🖨️ Bambu Lab 3D-Druckdaten (`.3mf` & `.stl`)
+## Bambu Lab 3D-Druckdaten (`.3mf` & `.stl`)
 
 Alle 3D-Druckdaten befinden sich direkt im Ordner [`cad/export/`](cad/export/) und sind **100 % stützfrei (`Support: AUS`)** konstruiert:
 
 | Datei | Beschreibung & Farbzuweisung |
 | :--- | :--- |
-| 📦 **[`cad/export/LoraWanFinder_BambuLab_Platte.3mf`](cad/export/LoraWanFinder_BambuLab_Platte.3mf)** | **Komplette 2-Farben Bambu-Studio-Druckplatte** (alle Teile druckfertig orientiert, `0 %` Support, Filament 1 & Filament 2 bereits als Multi-Part-Objekt zugewiesen) |
-| 🔹 [`cad/export/Gehaeuse_Unten.stl`](cad/export/Gehaeuse_Unten.stl) | **Farbe 1:** Gehäuse-Unterteil mit `26 mm` breitem Kabel-Durchgang unter dem ESP32, vergrößertem `+8 mm` Antennenraum & verdrehsicherer SMA-Sechskantaufnahme |
-| 🔹 [`cad/export/Gehaeuse_Oben.stl`](cad/export/Gehaeuse_Oben.stl) | **Farbe 1:** Gehäusedeckel-Hauptkörper mit gestufter OLED-Tasche & `5.4 mm` Freiraum über den ESP32-Stiftleisten |
-| 🎨 [`cad/export/Logo_und_Tasten_Farbe2.stl`](cad/export/Logo_und_Tasten_Farbe2.stl) | **Farbe 2:** Bündiges `0.60 mm` Inlay für das **IoTUeli-Logo** oberhalb des Displays und die Tasten-Symbole `‹  ●  ›` |
-| 🔘 [`cad/export/Taster_Kappe.stl`](cad/export/Taster_Kappe.stl) | **Farbe 2:** `3×` drucken – Tasterkappen (Unterseite 100 % flach für vollen `1.65 mm` Tastenhub) |
-| 🛠️ [`cad/LoraWanFinder.FCStd`](cad/LoraWanFinder.FCStd) | Parametrisches FreeCAD-Originalmodell (generiert über [`cad/build_enclosure.py`](cad/build_enclosure.py)) |
+| **[`cad/export/LoraWanFinder_BambuLab_Platte.3mf`](cad/export/LoraWanFinder_BambuLab_Platte.3mf)** | **Komplette 2-Farben Bambu-Studio-Druckplatte** (alle Teile druckfertig orientiert, `0 %` Support, Filament 1 & Filament 2 bereits als Multi-Part-Objekt zugewiesen) |
+| [`cad/export/Gehaeuse_Unten.stl`](cad/export/Gehaeuse_Unten.stl) | **Farbe 1:** Gehäuse-Unterteil mit `26 mm` breitem Kabel-Durchgang unter dem ESP32, vergrößertem `+8 mm` Antennenraum & verdrehsicherer SMA-Sechskantaufnahme |
+| [`cad/export/Gehaeuse_Oben.stl`](cad/export/Gehaeuse_Oben.stl) | **Farbe 1:** Gehäusedeckel-Hauptkörper mit gestufter OLED-Tasche & `5.4 mm` Freiraum über den ESP32-Stiftleisten |
+| [`cad/export/Logo_und_Tasten_Farbe2.stl`](cad/export/Logo_und_Tasten_Farbe2.stl) | **Farbe 2:** Bündiges `0.60 mm` Inlay für das **IoTUeli-Logo** oberhalb des Displays und die Tasten-Symbole `‹  ●  ›` |
+| [`cad/export/Taster_Kappe.stl`](cad/export/Taster_Kappe.stl) | **Farbe 2:** `3×` drucken – Tasterkappen (Unterseite 100 % flach für vollen `1.65 mm` Tastenhub) |
+| [`cad/LoraWanFinder.FCStd`](cad/LoraWanFinder.FCStd) | Parametrisches FreeCAD-Originalmodell (generiert über [`cad/build_enclosure.py`](cad/build_enclosure.py)) |
 
-> **💡 Tipp für Bambu Studio (AMS 2-Farben-Druck):**  
-> Öffne einfach [`cad/export/LoraWanFinder_BambuLab_Platte.3mf`](cad/export/LoraWanFinder_BambuLab_Platte.3mf). Der Deckel (`Gehaeuse_Oben`) liegt mit der Sichtseite nach unten auf dem Druckbett und besteht bereits aus zwei Teilkörpern (`Deckel_Hauptkoerper` = **Filament 1** und `IoTUeli_Logo_und_Tasten` = **Filament 2**). Da das Inlay exakt `0.60 mm` hoch ist (`3 Schichten à 0.20 mm`), finden nur in den ersten 3 Schichten Farbwechsel statt!
+> **Hinweis für Bambu Studio (AMS 2-Farben-Druck):**  
+> Öffne einfach [`cad/export/LoraWanFinder_BambuLab_Platte.3mf`](cad/export/LoraWanFinder_BambuLab_Platte.3mf). Der Deckel (`Gehaeuse_Oben`) liegt mit der Sichtseite nach unten auf dem Druckbett und besteht bereits aus zwei Teilkörpern (`Deckel_Hauptkoerper` = **Filament 1** und `IoTUeli_Logo_und_Tasten` = **Filament 2**). Da das Inlay exakt `0.60 mm` hoch ist (`3 Schichten à 0.20 mm`), finden nur in den ersten 3 Schichten Farbwechsel statt.
 
 ---
 
-## 🧰 Stückliste (BOM)
+## Stückliste (BOM)
 
 | Anz. | Bauteil | Details / Einbaumaße |
 | :---: | :--- | :--- |
@@ -53,12 +53,12 @@ Alle 3D-Druckdaten befinden sich direkt im Ordner [`cad/export/`](cad/export/) u
 
 ---
 
-## 🔌 Elektrischer Anschluss & 4-Pin-Taster-Belegung
+## Elektrischer Anschluss & 4-Pin-Taster-Belegung
 
 Die 3 Kurzhubtaster schalten gegen **`GND`** (interne Pull-Up-Widerstände im ESP32 sind aktiv). Pro `6 × 6 mm` Taster werden **nur 2 der 4 Pins** benötigt:
 
 ```
-       ✓ ANSCHLUSS: GND                            ✗ FREI LASSEN
+       ANSCHLUSS: GND                              FREI LASSEN
               │                                          │
               ▼                                          ▼
           ┌───────┐  ┌────────────────────────────┐  ┌───────┐
@@ -72,20 +72,20 @@ Die 3 Kurzhubtaster schalten gegen **`GND`** (interne Pull-Up-Widerstände im ES
           └───────┘  └────────────────────────────┘  └───────┘
               ▲                                          ▲
               │                                          │
-       ✗ FREI LASSEN                            ✓ GPIO 12 / 13 / 32
+         FREI LASSEN                              GPIO 12 / 13 / 32
 ```
 
 * **Der 100 %-sichere Diagonal-Trick:** Löte die zwei Drähte immer an **zwei diagonal gegenüberliegende Beinchen**:
-  * **`Pin 1` (oben links)** ➔ **`GND`** (gemeinsame Masse für alle 3 Taster)
-  * **`Pin 4` (unten rechts)** ➔
+  * **`Pin 1` (oben links)** -> **`GND`** (gemeinsame Masse für alle 3 Taster)
+  * **`Pin 4` (unten rechts)** ->
     * **Taster LINKS `[ ‹ ]`:** `GPIO 12`
     * **Taster MITTE `[ ● ]`:** `GPIO 13`
     * **Taster RECHTS `[ › ]`:** `GPIO 32`
-  * **`Pin 2` und `Pin 3`** bleiben frei!
+  * **`Pin 2` und `Pin 3`** bleiben frei.
 
 ---
 
-## 🛠️ Schritt-für-Schritt Montage
+## Schritt-für-Schritt Montage
 
 | Schritt 1: Unterteil & Gewinde | Schritt 2: Taster & SMA-Antenne | Schritt 3: Heltec V2 & Kabelkanal | Schritt 4: Kappen & Deckel |
 | :---: | :---: | :---: | :---: |
@@ -94,12 +94,12 @@ Die 3 Kurzhubtaster schalten gegen **`GND`** (interne Pull-Up-Widerstände im ES
 
 ---
 
-## 📱 Gebrauchserklärung: Die 5 Bildschirm-Seiten
+## Gebrauchserklärung: Die 5 Bildschirm-Seiten
 
 Alle 5 Funktions-Seiten werden einheitlich mit den **3 Tastern** bedient (kein komplizierter Langdruck nötig):
-* **Taster LINKS `[ ‹ ]` (`GPIO 12`):** Eine Seite zurückblättern (`1/5` ➔ `5/5` ➔ `4/5` ➔ `3/5` ➔ `2/5` ➔ `1/5`)
-* **Taster RECHTS `[ › ]` (`GPIO 32`):** Eine Seite weiterblättern (`1/5` ➔ `2/5` ➔ `3/5` ➔ `4/5` ➔ `5/5`)
-* **Taster MITTE `[ ● ]` (`GPIO 13`):** Führt immer genau die Aktion aus, die **unten in der Mitte in `[...]`** steht!
+* **Taster LINKS `[ ‹ ]` (`GPIO 12`):** Eine Seite zurückblättern (`1/5` -> `5/5` -> `4/5` -> `3/5` -> `2/5` -> `1/5`)
+* **Taster RECHTS `[ › ]` (`GPIO 32`):** Eine Seite weiterblättern (`1/5` -> `2/5` -> `3/5` -> `4/5` -> `5/5`)
+* **Taster MITTE `[ ● ]` (`GPIO 13`):** Führt immer genau die Aktion aus, die **unten in der Mitte in `[...]`** steht.
 
 | Seite | OLED-Titel | Funktion & Anzeige | Taste MITTE `[ ● ]` |
 | :---: | :--- | :--- | :--- |
@@ -111,7 +111,7 @@ Alle 5 Funktions-Seiten werden einheitlich mit den **3 Tastern** bedient (kein k
 
 ---
 
-## 💻 Firmware kompilieren & flashen (PlatformIO)
+## Firmware kompilieren & flashen (PlatformIO)
 
 ```bash
 # Projekt kompilieren
@@ -123,7 +123,7 @@ pio run -t upload
 
 ---
 
-## 📄 Dokumentation & Lizenz
+## Dokumentation & Links
 
 * **Vollständiges PDF-Handbuch (4 Seiten A4):** [`Bauanleitung_LoRaWAN_Finder.pdf`](Bauanleitung_LoRaWAN_Finder.pdf)
 * **Webseite:** [https://www.iotueli.ch](https://www.iotueli.ch)
