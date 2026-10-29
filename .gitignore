@@ -2,9 +2,10 @@
 .pio/
 .vscode/
 
-# FreeCAD backup files
-*.FCBak
-*.fcbak
+# In cad/ nur den export/-Ordner versionieren
+cad/*
+!cad/export/
+!cad/export/**
 
 # Python cache
 __pycache__/

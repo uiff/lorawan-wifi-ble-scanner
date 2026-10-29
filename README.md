@@ -33,7 +33,6 @@ Alle 3D-Druckdaten befinden sich direkt im Ordner [`cad/export/`](cad/export/) u
 | [`cad/export/Gehaeuse_Oben.stl`](cad/export/Gehaeuse_Oben.stl) | **Farbe 1:** Gehäusedeckel-Hauptkörper mit gestufter OLED-Tasche & `5.4 mm` Freiraum über den ESP32-Stiftleisten |
 | [`cad/export/Logo_und_Tasten_Farbe2.stl`](cad/export/Logo_und_Tasten_Farbe2.stl) | **Farbe 2:** Bündiges `0.60 mm` Inlay für das **IoTUeli-Logo** oberhalb des Displays und die Tasten-Symbole `‹  ●  ›` |
 | [`cad/export/Taster_Kappe.stl`](cad/export/Taster_Kappe.stl) | **Farbe 2:** `3×` drucken – Tasterkappen (Unterseite 100 % flach für vollen `1.65 mm` Tastenhub) |
-| [`cad/LoraWanFinder.FCStd`](cad/LoraWanFinder.FCStd) | Parametrisches FreeCAD-Originalmodell (generiert über [`cad/build_enclosure.py`](cad/build_enclosure.py)) |
 
 > **Hinweis für Bambu Studio (AMS 2-Farben-Druck):**  
 > Öffne einfach [`cad/export/LoraWanFinder_BambuLab_Platte.3mf`](cad/export/LoraWanFinder_BambuLab_Platte.3mf). Der Deckel (`Gehaeuse_Oben`) liegt mit der Sichtseite nach unten auf dem Druckbett und besteht bereits aus zwei Teilkörpern (`Deckel_Hauptkoerper` = **Filament 1** und `IoTUeli_Logo_und_Tasten` = **Filament 2**). Da das Inlay exakt `0.60 mm` hoch ist (`3 Schichten à 0.20 mm`), finden nur in den ersten 3 Schichten Farbwechsel statt.
